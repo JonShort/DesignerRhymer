@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "WhoIsJonGill",
+  "description": "Who is Jon Gill App",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonShort/WhoIsJonGill"
+  },
+  "scripts": {
+    "test": "echo lol",
+    "lint": "vbuild --eslint",
+    "dev": "vbuild -d",
+    "build": "vbuild"
+  },
+  "devDependencies": {
+    "vbuild": "^6.0.0"
+  },
+  "license": "MIT"
+}
