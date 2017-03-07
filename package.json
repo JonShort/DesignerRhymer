@@ -10,12 +10,13 @@
   "scripts": {
     "build": "vbuild",
     "clean": "rm -rf dist",
-    "deploy": "yarn build && git subtree push --prefix dist origin gh-pages && yarn run clean",
+    "deploy": "yarn run build && gh-pages -d dist && yarn run clean",
     "dev": "vbuild -d",
     "lint": "vbuild --eslint",
     "test": "echo lol"
   },
   "devDependencies": {
+    "gh-pages": "^0.12.0",
     "vbuild": "^6.0.0"
   },
   "license": "MIT"
