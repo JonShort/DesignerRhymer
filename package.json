@@ -8,10 +8,12 @@
     "url": "https://github.com/JonShort/WhoIsJonGill"
   },
   "scripts": {
-    "test": "echo lol",
-    "lint": "vbuild --eslint",
+    "build": "vbuild",
+    "clean": "rm -rf dist",
+    "deploy": "yarn build && git subtree push --prefix dist origin gh-pages && yarn run clean",
     "dev": "vbuild -d",
-    "build": "vbuild"
+    "lint": "vbuild --eslint",
+    "test": "echo lol"
   },
   "devDependencies": {
     "vbuild": "^6.0.0"
