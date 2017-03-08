@@ -2,6 +2,7 @@
   "private": true,
   "name": "WhoIsJonGill",
   "description": "Who is Jon Gill App",
+  "homepage": "https://jonshort.github.io/WhoIsJonGill",
   "version": "0.0.0",
   "repository": {
     "type": "git",
