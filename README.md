@@ -1,14 +1,21 @@
-# DesignerRhymer
+# designer-rhymer
 
-Quickly find a rhyming sentance for your favourite designers - written in [Vue.js](https://vuejs.org/).
+> A Vue.js project
 
-## Installation
-To run this locally:
+## Build Setup
 
-- `git clone` it somewhere
-- Run `yarn` _dont have yarn?_ - get it [here](https://yarnpkg.com/en/)
-- Run `yarn dev`
-- That's it!
+``` bash
+# install dependencies
+npm install
 
-## Why does this exist?
-I started this repo mainly to get a feel for Vue.js (being more of a React fan), and decided to have fun creating nicknames for the designers I know.
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
