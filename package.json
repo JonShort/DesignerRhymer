@@ -1,17 +1,17 @@
 {
   "private": true,
-  "name": "WhoIsJonGill",
-  "description": "Who is Jon Gill App",
-  "homepage": "https://jonshort.github.io/WhoIsJonGill",
+  "name": "DesignerRhymer",
+  "description": "Quickly find a rhyming sentance for your favourite designers",
+  "homepage": "https://jonshort.github.io/DesignerRhymer",
   "version": "0.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/JonShort/WhoIsJonGill"
+    "url": "https://github.com/JonShort/DesignerRhymer"
   },
   "scripts": {
     "build": "vbuild",
-    "clean": "rm -rf dist",
-    "deploy": "yarn run build && gh-pages -d dist && yarn run clean",
+    "rmBuild": "rm -rf dist",
+    "deploy": "yarn run build && gh-pages -d dist && yarn run rmBuild",
     "dev": "vbuild -d",
     "lint": "vbuild --eslint",
     "test": "echo lol"
