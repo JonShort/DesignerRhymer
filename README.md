@@ -1,6 +1,6 @@
 # DesignerRhymer
 
-Quickly find a rhyming sentance for your favourite designers - written in [Vue.js](https://vuejs.org/).
+Quickly find a rhyming sentence for your favourite designers - written in [Vue.js](https://vuejs.org/).
 
 ## Installation
 To run this locally:

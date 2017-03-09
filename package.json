@@ -2,6 +2,7 @@
   "name": "DesignerRhymer",
   "version": "1.0.0",
   "description": "Quickly find a rhyming sentence for your favourite designers",
+  "homepage": "https://jonshort.github.io/DesignerRhymer",
   "author": "Jon Short <JonShort@users.noreply.github.com>",
   "private": true,
   "repository": {
