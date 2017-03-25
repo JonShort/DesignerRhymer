@@ -1,14 +1,11 @@
 <template>
-  <div id="home">
-    <router-link to="/gill">
-      <div :class="$style.link"></div>
-    </router-link>
-  </div>
+  <router-link subject="gill" to="/gill">
+    <div :class="$style.link"></div>
+  </router-link>
 </template>
 
 <script>
   export default {
-    name: 'home',
   };
 </script>
 
