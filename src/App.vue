@@ -6,11 +6,11 @@
 
 <script>
   import ColorList from '@/data/colors/ColorList';
+  import getRandom from '@/functions/getRandom';
 
-  const currentColor = ColorList[Math.floor(Math.random() * ColorList.length)];
-
+  const currentColor = getRandom(ColorList);
+  
   export default {
-    name: 'app',
     data() {
       return {
         color: currentColor,

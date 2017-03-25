@@ -1,22 +1,17 @@
 <template>
-  <div id="fullscreen-quote">
-    <section :class="$style.text">
-      <p><span :class="$style.quote">{{current}}</span> {{subject}}</p>
-    </section>
-  </div>
+  <section :class="$style.text">
+    <p><span :class="$style.quote">{{current}}</span> {{subject}}</p>
+  </section>
 </template>
 
 <script>
-  import { SubjectName, QuoteList } from '@/data/people/GillData';
-
-  const currentQuote = QuoteList[Math.floor(Math.random() * QuoteList.length)];
 
   export default {
-    name: 'fullscreen-quote',
+    props: ['quote', 'name'],
     data() {
       return {
-        current: currentQuote,
-        subject: SubjectName,
+        current: this.quote,
+        subject: this.name,
       };
     },
   };
