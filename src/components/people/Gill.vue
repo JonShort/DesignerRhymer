@@ -1,10 +1,10 @@
 <template>
-  <FullScreenQuote :quote="currentQuote" :name="SubjectName" />
+  <FullScreenQuote :quote="currentQuote" :name="SubjectName" :link="Link" />
 </template>
 
 <script>
   import getRandom from '@/functions/getRandom';
-  import { SubjectName, QuoteList } from '@/data/people/GillData';
+  import { SubjectName, QuoteList, Link } from '@/data/people/GillData';
   import FullScreenQuote from '@/components/fullscreen-quote/FullScreenQuote';
 
   const currentQuote = getRandom(QuoteList);
@@ -17,6 +17,7 @@
       return {
         currentQuote,
         SubjectName,
+        Link,
       };
     },
   };

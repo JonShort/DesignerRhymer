@@ -1,23 +1,15 @@
 <template>
   <router-link subject="gill" to="/gill">
-    <div :class="$style.link"></div>
+    <GillButton />
   </router-link>
 </template>
 
 <script>
+  import GillButton from '@/components/buttons/GillButton';
+
   export default {
+    components: {
+      GillButton,
+    },
   };
 </script>
-
-<style module>
-  .link {
-    border: 10px solid #fff;
-    cursor: pointer;
-    height: 200px;
-    width: 200px;
-  }
-
-  .link:hover, .link:focus {
-    background: #fff;
-  }
-</style>
