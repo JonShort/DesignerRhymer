@@ -12,4 +12,6 @@
     'All on his bill',
     'At the shopping till',
   ];
+
+  export const Link = 'https://twitter.com/jontyman01';
 </script>
