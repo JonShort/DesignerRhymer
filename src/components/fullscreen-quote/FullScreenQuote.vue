@@ -1,26 +1,43 @@
 <template>
-  <section>
-    <p :class="$style.text"><span :class="$style.quote">{{current}}</span> <a :class="$style.link" :href="nameLink" target="_blank">{{subject}}</a></p>
+  <section :class="$style.container">
+    <p :class="$style.text"><span :class="$style.quote">{{value}}</span> <a :class="$style.link" :href="nameLink" target="_blank">{{subject}}</a></p>
+    <RefreshButton :onClick="calc" text="Another one" />
   </section>
 </template>
 
 <script>
+  import RefreshButton from '@/components/buttons/RefreshButton';
+  import getRandom from '@/functions/getRandom';
 
   export default {
-    props: ['quote', 'name', 'link'],
+    components: {
+      RefreshButton,
+    },
+    props: ['quotes', 'name', 'link'],
     data() {
       return {
-        current: this.quote,
+        list: this.quotes,
         subject: this.name,
         nameLink: this.link,
+        value: getRandom(this.quotes),
       };
+    },
+    methods: {
+      calc() {
+        this.value = getRandom(this.list);
+      },
     },
   };
 </script>
 
 <style module>
+  .container {
+    text-align: center;
+  }
+
   .text {
-    font-size: 5vw;
+    font-size: 10vmin;
+    padding: 6vmin 0;
   }
 
   .quote {
