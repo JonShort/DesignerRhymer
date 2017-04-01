@@ -1,5 +1,5 @@
 <template>
-  <FullScreenQuote :quotes="QuoteList" :name="SubjectName" :link="Link" />
+  <FullScreenQuote :calcBkg="calcBkg" :quotes="QuoteList" :name="SubjectName" :link="Link" />
 </template>
 
 <script>
@@ -10,6 +10,7 @@
     components: {
       FullScreenQuote,
     },
+    props: ['calcBkg'],
     data() {
       return {
         QuoteList,

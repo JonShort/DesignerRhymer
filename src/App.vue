@@ -1,20 +1,23 @@
 <template>
   <div id="app" v-bind:style="{backgroundColor: color}">
-    <router-view></router-view>
+    <router-view :calcBkg="colorBkg"></router-view>
   </div>
 </template>
 
 <script>
   import ColorList from '@/data/colors/ColorList';
   import getRandom from '@/functions/getRandom';
-
-  const currentColor = getRandom(ColorList);
   
   export default {
     data() {
       return {
-        color: currentColor,
+        color: getRandom(ColorList, 'Color'),
       };
+    },
+    methods: {
+      colorBkg() {
+        this.color = getRandom(ColorList, 'Color');
+      },
     },
   };
 </script>
