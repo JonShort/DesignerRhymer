@@ -3,7 +3,7 @@
 </template>
 
 <script>
-  import GenericButton from '@/components/buttons/GenericButton';
+  import GenericButton from '@/components/buttons/generic/GenericButton';
 
   export default {
     props: ['onClick', 'text'],
