@@ -3,6 +3,7 @@ import Router from 'vue-router';
 
 import Home from '@/components/home/Home';
 import Gill from '@/components/people/Gill';
+import Short from '@/components/people/Short';
 
 Vue.use(Router);
 
@@ -17,6 +18,11 @@ export default new Router({
       path: '/gill',
       name: 'Gill',
       component: Gill,
+    },
+    {
+      path: '/short',
+      name: 'Short',
+      component: Short,
     },
   ],
 });
