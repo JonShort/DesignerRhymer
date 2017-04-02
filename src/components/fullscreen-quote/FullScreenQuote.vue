@@ -9,13 +9,11 @@
 
 <script>
   import RefreshButton from '@/components/buttons/RefreshButton';
-  import GenericButton from '@/components/buttons/GenericButton';
   import getRandom from '@/functions/getRandom';
 
   export default {
     components: {
       RefreshButton,
-      GenericButton,
     },
     props: ['quotes', 'name', 'link', 'calcBkg'],
     data() {

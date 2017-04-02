@@ -4,19 +4,19 @@
       <GillButton />
     </router-link>
     <router-link subject="short" to="/short">
-      <GenericButton :class="$style.generic" text="JON SHORT" />
+      <ShortButton />
     </router-link>
   </div>
 </template>
 
 <script>
   import GillButton from '@/components/buttons/GillButton';
-  import GenericButton from '@/components/buttons/GenericButton';
+  import ShortButton from '@/components/buttons/ShortButton';
 
   export default {
     components: {
       GillButton,
-      GenericButton,
+      ShortButton,
     },
   };
 </script>
@@ -25,9 +25,7 @@
   .container {
     align-items: center;
     display: flex;
-  }
-
-  .generic {
-    margin: 4vmin;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 </style>
