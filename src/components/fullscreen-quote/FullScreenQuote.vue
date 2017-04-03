@@ -1,19 +1,25 @@
 <template>
   <section :class="$style.container">
-    <p :class="$style.text"><span :class="$style.quote">{{value}}</span> <a :class="$style.link" :href="nameLink" target="_blank">{{subject}}</a></p>
+    <div :class="$style.text">
+      <p :class="$style.quote">{{value}}</p>
+      <p><a :class="$style.link" :href="nameLink" target="_blank">{{subject}}</a></p>
+    </div>
     <div>
-      <RefreshButton :onClick="calc" text="Another one" />
+      <GenericButton v-on:click.native="refresh" text="Another one" />
+      <router-link subject="home" to="/">
+        <GenericButton text="Home" />
+      </router-link>
     </div>
   </section>
 </template>
 
 <script>
-  import RefreshButton from '@/components/buttons/RefreshButton';
+  import GenericButton from '@/components/buttons/generic/GenericButton';
   import getRandom from '@/functions/getRandom';
 
   export default {
     components: {
-      RefreshButton,
+      GenericButton,
     },
     props: ['quotes', 'name', 'link', 'calcBkg'],
     data() {
@@ -24,7 +30,7 @@
       };
     },
     methods: {
-      calc() {
+      refresh() {
         this.value = getRandom(this.quotes, 'quote');
         this.calcBkg();
       },
@@ -34,12 +40,20 @@
 
 <style module>
   .container {
+    
     text-align: center;
   }
 
   .text {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 10vmin;
-    padding: 6vmin 0;
+    padding: 20vmin 0;
+    justify-content: center;
+  }
+
+  .text p {
+    margin: 0 1vmin;
   }
 
   .quote {
