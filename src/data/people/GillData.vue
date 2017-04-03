@@ -8,7 +8,7 @@
     'Going in for the kill',
     'Writing his will',
     'Sharpening his drill',
-    'Somehow he is still',
+    'Somehow he\'s still',
     'All on his bill',
     'At the shopping till',
   ];

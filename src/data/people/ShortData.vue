@@ -3,10 +3,10 @@
 
   export const QuoteList = [
     'Cannot be bought',
-    'Easily taught',
+    'Quite easily taught',
     'On the tennis court',
-    'Likes to drink port',
-    'Never been caught',
+    'Has never drank port',
+    'Cannot be caught',
     'Always distraught',
     'Building a fort',
     'Able to teleport',

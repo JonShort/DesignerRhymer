@@ -4,10 +4,10 @@
       <p :class="$style.quote">{{value}}</p>
       <p><a :class="$style.link" :href="nameLink" target="_blank">{{subject}}</a></p>
     </div>
-    <div>
+    <div :class="$style.buttons">
       <GenericButton v-on:click.native="refresh" text="Another one" />
       <router-link subject="home" to="/">
-        <GenericButton text="Home" />
+        <GenericButton text="Home" :link="true" />
       </router-link>
     </div>
   </section>
@@ -40,8 +40,13 @@
 
 <style module>
   .container {
-    
     text-align: center;
+  }
+
+  .buttons {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .text {
