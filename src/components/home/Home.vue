@@ -1,9 +1,9 @@
 <template>
   <div :class="$style.container">
-    <router-link subject="gill" to="/gill">
+    <router-link v-on:click.native="calcBkg" subject="gill" to="/gill">
       <GillButton />
     </router-link>
-    <router-link subject="short" to="/short">
+    <router-link v-on:click.native="calcBkg" subject="short" to="/short">
       <ShortButton />
     </router-link>
   </div>
@@ -18,6 +18,7 @@
       GillButton,
       ShortButton,
     },
+    props: ['calcBkg'],
   };
 </script>
 

@@ -1,12 +1,12 @@
 <template>
-  <div :class="$style.container">
+  <div :class="[$style.container, link && $style.link]">
     {{text}}
   </div>
 </template>
 
 <script>
   export default {
-    props: ['text'],
+    props: ['text', 'link'],
   };
 </script>
 
@@ -24,5 +24,9 @@
   .container:hover, .container:focus {
     border-color: #fff;
     color: #fff;
+  }
+
+  .link {
+    border: none;
   }
 </style>

@@ -24,5 +24,10 @@ export default new Router({
       name: 'Short',
       component: Short,
     },
+    {
+      path: '/**',
+      name: '404',
+      component: Home,
+    },
   ],
 });
