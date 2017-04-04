@@ -12,8 +12,8 @@
 
 <style module>
   .container {
-    border: 2px solid #000;
-    color: #000;
+    border: 2px solid #fff;
+    color: #fff;
     cursor: pointer;
     display: inline-block;
     font-size: 4vmin;
@@ -22,11 +22,13 @@
   }
 
   .container:hover, .container:focus {
-    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
     color: #fff;
   }
 
   .link {
+    background: transparent;
     border: none;
+    color: #000;
   }
 </style>

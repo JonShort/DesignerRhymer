@@ -41,6 +41,7 @@
 <style module>
   .container {
     text-align: center;
+    width: 100%;
   }
 
   .buttons {
