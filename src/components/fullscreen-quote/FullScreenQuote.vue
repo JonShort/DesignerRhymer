@@ -2,7 +2,7 @@
   <section :class="$style.container">
     <div :class="$style.text">
       <p :class="$style.quote">{{value}}</p>
-      <p><a :class="$style.link" :href="nameLink" target="_blank">{{subject}}</a></p>
+      <p><a :class="$style.link" :href="link" target="_blank">{{name}}</a></p>
     </div>
     <div :class="$style.buttons">
       <GenericButton v-on:click.native="refresh" text="Another one" />
@@ -24,8 +24,6 @@
     props: ['quotes', 'name', 'link', 'calcBkg'],
     data() {
       return {
-        subject: this.name,
-        nameLink: this.link,
         value: getRandom(this.quotes, 'quote'),
       };
     },
