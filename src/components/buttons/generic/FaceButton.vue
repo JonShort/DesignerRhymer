@@ -12,11 +12,11 @@
 <style module>
   .container {
     cursor: pointer;
-    height: calc(20vh + 20vw);
+    height: calc(15vh + 15vw);
     margin: 5vmin;
     max-height: 100vmin;
     max-width: 100vmin;
-    width: calc(20vh + 20vw);
+    width: calc(15vh + 15vw);
   }
 
   .container:hover, .container:focus path {
