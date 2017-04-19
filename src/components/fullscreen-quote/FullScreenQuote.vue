@@ -2,7 +2,7 @@
   <section :class="$style.container">
     <div :class="$style.text">
       <p :class="$style.quote">{{value}}</p>
-      <p><a :class="$style.link" :href="link" target="_blank">{{name}}</a></p>
+      <p><a :class="$style.link" :href="link" target="_blank" rel="noopener noreferrer">{{name}}</a></p>
     </div>
     <div :class="$style.buttons">
       <GenericButton v-on:click.native="refresh" text="Another one" />
